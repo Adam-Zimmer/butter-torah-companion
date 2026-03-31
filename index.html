@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torah Companion — תורה חַבֵּר — Your Personal Spiritual Guide</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:wght@400;500;600;700&family=Frank+Ruhl+Libre:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        h1, h2, h3, .serif {
+            font-family: 'Lora', serif;
+        }
+        .hebrew {
+            font-family: 'Frank Ruhl Libre', serif;
+            direction: rtl;
+        }
+        .star-of-david {
+            width: 24px;
+            height: 24px;
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+        }
+        .float-animation {
+            animation: float 3s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 via-white to-indigo-50 text-stone-900">
+    
+    <!-- Navigation -->
+    <nav class="fixed w-full top-0 bg-white/95 backdrop-blur-sm border-b border-blue-100 z-50 shadow-sm">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <!-- Star of David SVG -->
+                <svg class="w-7 h-7 text-blue-700" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2L9.5 7.5L4 7.5L8.5 10.5L6.5 16L12 12.5L17.5 16L15.5 10.5L20 7.5L14.5 7.5L12 2Z"/>
+                    <path d="M12 22L14.5 16.5L20 16.5L15.5 13.5L17.5 8L12 11.5L6.5 8L8.5 13.5L4 16.5L9.5 16.5L12 22Z"/>
+                </svg>
+                <div>
+                    <div class="text-lg font-semibold text-blue-900">Torah Companion</div>
+                    <div class="text-xs hebrew text-blue-700" style="direction: rtl;">תורה חַבֵּר</div>
+                </div>
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="#features" class="text-sm text-blue-700 hover:text-blue-900 transition font-medium">Features</a>
+                <a href="#about" class="text-sm text-blue-700 hover:text-blue-900 transition font-medium">About</a>
+                <a href="#signin" class="text-sm text-blue-700 hover:text-blue-900 transition font-medium">Sign In</a>
+                <button class="bg-blue-700 hover:bg-blue-800 text-white px-5 py-2 rounded-lg text-sm font-semibold transition shadow-md hover:shadow-lg">
+                    Begin Your Journey
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-32 pb-20 px-6 relative overflow-hidden">
+        <!-- Decorative Elements -->
+        <div class="absolute top-20 right-10 opacity-5 float-animation">
+            <svg class="w-64 h-64 text-blue-600" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L9.5 7.5L4 7.5L8.5 10.5L6.5 16L12 12.5L17.5 16L15.5 10.5L20 7.5L14.5 7.5L12 2Z"/>
+                <path d="M12 22L14.5 16.5L20 16.5L15.5 13.5L17.5 8L12 11.5L6.5 8L8.5 13.5L4 16.5L9.5 16.5L12 22Z"/>
+            </svg>
+        </div>
+        
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 items-center relative z-10">
+            <!-- Left: Copy -->
+            <div>
+                <div class="flex items-center gap-2 mb-4">
+                    <div class="h-px bg-gradient-to-r from-blue-600 to-transparent w-12"></div>
+                    <p class="text-blue-700 text-sm font-semibold tracking-wide uppercase">Your Spiritual Companion</p>
+                </div>
+                <h1 class="text-5xl md:text-6xl font-bold text-blue-950 mb-4 leading-tight">
+                    Torah Wisdom.<br/>
+                    <span class="text-blue-700">Personal Guidance.</span>
+                </h1>
+                <p class="hebrew text-3xl text-blue-800 mb-6" style="direction: rtl;">
+                    תורה • חכמה • הדרכה
+                </p>
+                <p class="text-lg text-slate-700 mb-8 leading-relaxed">
+                    Ask questions about life, faith, and Jewish practice. Receive personalized guidance rooted in Torah, Talmud, and millennia of sacred wisdom — available whenever you need it.
+                </p>
+                <button class="bg-blue-700 hover:bg-blue-800 text-white px-8 py-4 rounded-lg font-semibold text-lg transition shadow-lg hover:shadow-xl">
+                    Begin Your Journey
+                </button>
+                <p class="text-sm text-slate-600 mt-4">
+                    ✡ Private & sacred conversations — No ads • No data selling<br>
+                    Guided by authentic Jewish sources
+                </p>
+            </div>
+
+            <!-- Right: Chat Preview -->
+            <div class="relative">
+                <!-- Decorative scroll border -->
+                <div class="absolute -inset-1 bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-600 rounded-2xl opacity-20 blur"></div>
+                
+                <div class="relative bg-white rounded-2xl shadow-2xl border-2 border-blue-100 p-6 space-y-4">
+                    <!-- Header with Hebrew -->
+                    <div class="text-center pb-3 border-b border-blue-100">
+                        <p class="hebrew text-lg text-blue-800 font-semibold" style="direction: rtl;">שיחה עם התורה</p>
+                        <p class="text-xs text-slate-600">Conversation with Torah</p>
+                    </div>
+                    
+                    <!-- Chat Bubble 1 (User) -->
+                    <div class="flex items-start gap-3">
+                        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                            <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <div class="bg-blue-50 rounded-2xl rounded-tl-none px-4 py-3 max-w-sm border border-blue-100">
+                            <p class="text-sm text-slate-800">I'm struggling with balancing my career ambitions and my spiritual life. How does Torah guide us on this?</p>
+                        </div>
+                    </div>
+
+                    <!-- Chat Bubble 2 (AI) -->
+                    <div class="flex items-start gap-3">
+                        <div class="w-8 h-8 rounded-full bg-gradient-to-br from-blue-600 to-indigo-700 flex items-center justify-center flex-shrink-0">
+                            <svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2L9.5 7.5L4 7.5L8.5 10.5L6.5 16L12 12.5L17.5 16L15.5 10.5L20 7.5L14.5 7.5L12 2Z"/>
+                                <path d="M12 22L14.5 16.5L20 16.5L15.5 13.5L17.5 8L12 11.5L6.5 8L8.5 13.5L4 16.5L9.5 16.5L12 22Z"/>
+                            </svg>
+                        </div>
+                        <div class="bg-gradient-to-br from-slate-50 to-blue-50 rounded-2xl rounded-tl-none px-4 py-3 max-w-sm border border-blue-100">
+                            <p class="text-sm text-slate-800 mb-3">This is a beautiful question. Torah teaches us through Pirkei Avot that we must find balance: "Im ein kemach, ein Torah" — without sustenance, there is no Torah study. Your career isn't separate from your spiritual path...</p>
+                            <div class="pt-2 border-t border-blue-200">
+                                <p class="text-xs text-blue-800 font-medium mb-1">📜 Sources cited:</p>
+                                <p class="text-xs text-slate-600 italic">
+                                    • Pirkei Avot 3:17<br/>
+                                    • Rambam, Mishneh Torah
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Chat Bubble 3 (User follow-up) -->
+                    <div class="flex items-start gap-3">
+                        <div class="w-8 h-8 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0">
+                            <svg class="w-4 h-4 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
+                            </svg>
+                        </div>
+                        <div class="bg-blue-50 rounded-2xl rounded-tl-none px-4 py-3 max-w-sm border border-blue-100">
+                            <p class="text-sm text-slate-800">Can you share more about how Rambam approached this?</p>
+                        </div>
+                    </div>
+
+                    <!-- Typing indicator -->
+                    <div class="flex items-center gap-3">
+                        <div class="w-8 h-8 rounded-full bg-gradient-to-br from-blue-600 to-indigo-700 flex items-center justify-center flex-shrink-0">
+                            <svg class="w-4 h-4 text-white" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2L9.5 7.5L4 7.5L8.5 10.5L6.5 16L12 12.5L17.5 16L15.5 10.5L20 7.5L14.5 7.5L12 2Z"/>
+                                <path d="M12 22L14.5 16.5L20 16.5L15.5 13.5L17.5 8L12 11.5L6.5 8L8.5 13.5L4 16.5L9.5 16.5L12 22Z"/>
+                            </svg>
+                        </div>
+                        <div class="flex items-center gap-1 px-4 py-3">
+                            <div class="w-2 h-2 bg-blue-400 rounded-full animate-bounce" style="animation-delay: 0ms;"></div>
+                            <div class="w-2 h-2 bg-blue-400 rounded-full animate-bounce" style="animation-delay: 150ms;"></div>
+                            <div class="w-2 h-2 bg-blue-400 rounded-full animate-bounce" style="animation-delay: 300ms;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 px-6 bg-white">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <p class="hebrew text-2xl text-blue-700 mb-3" style="direction: rtl;">מה מיוחד כאן?</p>
+                <h2 class="text-4xl font-bold text-blue-950 mb-4">
+                    More Than Answers.<br/>A Spiritual Journey.
+                </h2>
+                <p class="text-lg text-slate-700 max-w-2xl mx-auto">
+                    Unlike generic Torah Q&A, Torah Companion remembers your path, understands your context, and grows with you through life's challenges.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="text-center p-6 rounded-xl bg-gradient-to-br from-blue-50 to-white border border-blue-100 hover:shadow-lg transition">
+                    <div class="w-14 h-14 bg-blue-600 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-md">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-950 mb-2">Personalized to You</h3>
+                    <p class="text-sm hebrew text-blue-700 mb-3" style="direction: rtl;">מותאם אישית</p>
+                    <p class="text-slate-700 leading-relaxed">
+                        Remembers your spiritual journey, life stage, and past conversations to provide guidance tailored to where you are right now.
+                    </p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="text-center p-6 rounded-xl bg-gradient-to-br from-indigo-50 to-white border border-indigo-100 hover:shadow-lg transition">
+                    <div class="w-14 h-14 bg-indigo-600 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-md">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-950 mb-2">Rooted in Torah</h3>
+                    <p class="text-sm hebrew text-indigo-700 mb-3" style="direction: rtl;">מבוסס על תורה</p>
+                    <p class="text-slate-700 leading-relaxed">
+                        Every response draws from Torah, Talmud, Midrash, and classical commentaries — with clear citations so you can explore deeper.
+                    </p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="text-center p-6 rounded-xl bg-gradient-to-br from-purple-50 to-white border border-purple-100 hover:shadow-lg transition">
+                    <div class="w-14 h-14 bg-purple-600 rounded-xl flex items-center justify-center mx-auto mb-4 shadow-md">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold text-blue-950 mb-2">Private & Sacred</h3>
+                    <p class="text-sm hebrew text-purple-700 mb-3" style="direction: rtl;">פרטי ומקודש</p>
+                    <p class="text-slate-700 leading-relaxed">
+                        Your conversations are confidential. Available 24/7 for life's urgent questions without judgment or appointment.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Proof / Trust Section -->
+    <section class="py-16 px-6 bg-gradient-to-br from-blue-50 via-indigo-50 to-purple-50">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-12">
+                <div class="inline-flex items-center gap-2 bg-white px-4 py-2 rounded-full shadow-sm border border-blue-200 mb-4">
+                    <svg class="w-5 h-5 text-blue-600" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2L9.5 7.5L4 7.5L8.5 10.5L6.5 16L12 12.5L17.5 16L15.5 10.5L20 7.5L14.5 7.5L12 2Z"/>
+                        <path d="M12 22L14.5 16.5L20 16.5L15.5 13.5L17.5 8L12 11.5L6.5 8L8.5 13.5L4 16.5L9.5 16.5L12 22Z"/>
+                    </svg>
+                    <p class="text-sm font-semibold text-blue-800">Trusted by the Jewish Community</p>
+                </div>
+                <p class="hebrew text-xl text-blue-700" style="direction: rtl;">מהימן ע״י הקהילה היהודית</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md border border-blue-100 text-center">
+                    <p class="text-5xl font-bold text-blue-700 mb-2">10,000+</p>
+                    <p class="text-slate-700 font-medium">Questions Answered</p>
+                    <p class="text-sm text-slate-500 mt-2">With Torah sources</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md border border-indigo-100 text-center">
+                    <p class="text-5xl font-bold text-indigo-700 mb-2">24/7</p>
+                    <p class="text-slate-700 font-medium">Always Available</p>
+                    <p class="text-sm text-slate-500 mt-2">Shabbat awareness</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md border border-purple-100 text-center">
+                    <p class="text-5xl font-bold text-purple-700 mb-2">100%</p>
+                    <p class="text-slate-700 font-medium">Private & Secure</p>
+                    <p class="text-sm text-slate-500 mt-2">Your data stays yours</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-6 bg-gradient-to-br from-blue-700 via-indigo-700 to-blue-800 text-white relative overflow-hidden">
+        <!-- Decorative Stars -->
+        <div class="absolute top-10 left-10 opacity-10">
+            <svg class="w-32 h-32 text-white" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L9.5 7.5L4 7.5L8.5 10.5L6.5 16L12 12.5L17.5 16L15.5 10.5L20 7.5L14.5 7.5L12 2Z"/>
+                <path d="M12 22L14.5 16.5L20 16.5L15.5 13.5L17.5 8L12 11.5L6.5 8L8.5 13.5L4 16.5L9.5 16.5L12 22Z"/>
+            </svg>
+        </div>
+        <div class="absolute bottom-10 right-10 opacity-10">
+            <svg class="w-32 h-32 text-white" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2L9.5 7.5L4 7.5L8.5 10.5L6.5 16L12 12.5L17.5 16L15.5 10.5L20 7.5L14.5 7.5L12 2Z"/>
+                <path d="M12 22L14.5 16.5L20 16.5L15.5 13.5L17.5 8L12 11.5L6.5 8L8.5 13.5L4 16.5L9.5 16.5L12 22Z"/>
+            </svg>
+        </div>
+        
+        <div class="max-w-3xl mx-auto text-center relative z-10">
+            <p class="hebrew text-3xl font-bold mb-4" style="direction: rtl;">התחל את המסע הרוחני שלך</p>
+            <h2 class="text-4xl md:text-5xl font-bold mb-4">
+                Begin Your Spiritual Journey Today
+            </h2>
+            <p class="text-xl text-blue-100 mb-8 leading-relaxed">
+                Join thousands exploring Torah wisdom with a companion who understands your unique path. No credit card required.
+            </p>
+            <button class="bg-white text-blue-700 hover:bg-blue-50 px-10 py-5 rounded-lg font-bold text-xl transition shadow-2xl hover:shadow-3xl hover:scale-105 transform">
+                Start Free Conversation
+            </button>
+            <p class="text-sm text-blue-200 mt-4">
+                ✡ Free forever • Private conversations • Authentic sources
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-12 px-6">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-4 gap-8">
+            <div>
+                <div class="flex items-center gap-2 mb-4">
+                    <svg class="w-6 h-6 text-blue-400" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2L9.5 7.5L4 7.5L8.5 10.5L6.5 16L12 12.5L17.5 16L15.5 10.5L20 7.5L14.5 7.5L12 2Z"/>
+                        <path d="M12 22L14.5 16.5L20 16.5L15.5 13.5L17.5 8L12 11.5L6.5 8L8.5 13.5L4 16.5L9.5 16.5L12 22Z"/>
+                    </svg>
+                    <span class="text-slate-200 font-semibold">Torah Companion</span>
+                </div>
+                <p class="text-sm hebrew mb-2" style="direction: rtl;">תורה חַבֵּר</p>
+                <p class="text-sm">
+                    Your personal guide to Torah wisdom and spiritual growth.
+                </p>
+            </div>
+            <div>
+                <h4 class="text-slate-200 font-semibold mb-3">Product</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#features" class="hover:text-blue-300 transition">Features</a></li>
+                    <li><a href="#" class="hover:text-blue-300 transition">How It Works</a></li>
+                    <li><a href="#" class="hover:text-blue-300 transition">FAQ</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-slate-200 font-semibold mb-3">Resources</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-blue-300 transition">Torah Sources</a></li>
+                    <li><a href="#" class="hover:text-blue-300 transition">Blog</a></li>
+                    <li><a href="#" class="hover:text-blue-300 transition">Community</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-slate-200 font-semibold mb-3">Legal</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#" class="hover:text-blue-300 transition">Privacy Policy</a></li>
+                    <li><a href="#" class="hover:text-blue-300 transition">Terms of Service</a></li>
+                    <li><a href="#" class="hover:text-blue-300 transition">Disclaimer</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto mt-8 pt-8 border-t border-slate-800 text-center">
+            <p class="text-sm text-slate-500">© 2026 Torah Companion. All rights reserved.</p>
+            <p class="text-xs text-slate-600 mt-2 italic">
+                Torah Companion is an educational tool. For halachic decisions, please consult a qualified rabbi.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

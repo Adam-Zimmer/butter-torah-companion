@@ -1,0 +1,23 @@
+{
+  "name": "torah-companion-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Torah Companion - Your Personal Spiritual Guide",
+  "scripts": {
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "dev": "echo 'Run dev:frontend and dev:backend in separate terminals'",
+    "build:frontend": "cd frontend && npm run build",
+    "build:backend": "cd backend && npm run build",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install"
+  },
+  "keywords": [
+    "torah",
+    "judaism",
+    "ai",
+    "spiritual",
+    "companion"
+  ],
+  "author": "",
+  "license": "UNLICENSED"
+}
